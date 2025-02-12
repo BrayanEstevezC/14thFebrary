@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+    font-family: "Pacifico", serif;
+
+}
+
+#btnNo{
+    position: absolute;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    display: flex; 
+    align-items: center;
+}
+
+.star{
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0;
+    animation:  twinkle 2s infinite ease-in-out alternate;
+}
+
+@keyframes twinkle{
+    0%{
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+.img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+@media (max-width: 768px){
+    .img{
+        width: 50%;
+        margin: auto;
+    }
+    .perrito{
+        width: 85%;
+    }
+}
+p-0{
+    margin: 0;
+    padding: 0;
+}
+
+.fa-heart{
+    color: red;
+    animation: latido 2.5s infinite ease-in-out;
+}
+
+@keyframes latido {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.2); }
+    50% { transform: scale(1); }
+    70% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
